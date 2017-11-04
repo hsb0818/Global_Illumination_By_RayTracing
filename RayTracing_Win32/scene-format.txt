@@ -1,0 +1,62 @@
+// ---- Camera
+10.0 5.0 0.0    // eye
+0.0 1.0 0.0     // up
+-1.0 -0.5 -1.0  // look
+120.0           // fovx
+
+
+// ---- Image Resolution
+512             // width
+512             // height
+
+
+// ----- Light Sources
+2               // number of lights
+
+p               // point light source
+5.0 3.0 -5.0    // position
+100 100 100     // color
+
+d               // directional light source
+0.0 0.0 -1.0    // direction
+200 150 150     // color 
+
+
+// ----- Objects
+3               // number of objects
+
+c               // cube
+20 20 20        // diffuse
+40 40 40        // specular
+30.0            // shininess
+0.5             // refeclted coefficient
+0.95            // transmitted coefficient
+1.33            // refracted index
+1.0 1.5 -5.0    // vertex 0
+1.0 0.5 -5.0    // vertex 1
+2.0 0.5 -5.0    // vertex 2
+2.0 1.5 -5.0    // vertex 3
+1.0 1.5 -6.0    // vertex 4
+1.0 0.5 -6.0    // vertex 5
+2.0 0.5 -6.0    // vertex 6
+2.0 1.5 -6.0    // vertex 7
+
+s               // sphere
+150 100 0       // diffuse
+200 200 200     // specular
+20.0            // shininess
+0.7             // reflected coefficient
+0.0             // transmitted coefficient
+1.25            // refracted index
+0.0 2.0 -6.0    // center
+0.5             // radius
+
+p               // plane
+140 140 140     // diffuse
+140 140 140     // specular
+30.0            // shininess 
+0.8             // reflected coefficient
+0.5             // transmitted coefficient
+1.1             // refracted index
+0.0 1.0 0.0     // normal vector
+0.0 -1.0 0.0    // a point on the plane
